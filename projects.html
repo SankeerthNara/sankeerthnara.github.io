@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sankeerth Nara</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Sankeerth Nara</h1>
+  <nav>
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="now">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <script src="theme-toggle.js"></script>
+  <!-- SIDE PROGRESS NAV -->
+  <nav class="progress-nav">
+    <div class="progress-track"></div>
+
+    <div class="progress-dots">
+      <div class="progress-dot" data-index="0"></div>
+      <div class="progress-dot" data-index="1"></div>
+      <div class="progress-dot" data-index="2"></div>
+      <div class="progress-dot" data-index="3"></div>
+    </div>
+  </nav>
+
+  <!-- PROJECTS SECTION -->
+  <section class="projects">
+    <h2>Projects</h2>
+    <p class="scroll-hint">↓ scroll to explore</p>
+
+    <ul class="project-grid">
+
+      <!-- Project 1 -->
+      <li data-project="0">
+        <article class="text" id="project-0">
+          <h3 class="project-title"><strong>Music Player (C)</strong></h3>
+
+          <p>
+            I developed a music player in C that runs in the terminal using a command-line interface (CLI). The application allows users to manage a playlist by adding songs, deleting songs, and viewing the list of available tracks. It also supports basic playback control features such as displaying the currently playing song and navigating between tracks.
+          </p>
+
+          <p>
+            The project focuses on core programming concepts like file handling, data structures, and user input processing. Songs are stored and managed efficiently, allowing the program to maintain and update the playlist dynamically. The interface is menu-driven, making it easy for users to interact with the system through simple commands.
+          </p>
+
+          <p>
+            This project helped me strengthen my understanding of structured programming, memory management, and designing user-friendly interactions within a terminal environment.
+          </p>
+        </article>
+      </li>
+
+      <!-- Project 2 -->
+      <li data-project="1">
+        <article class="text" id="project-1">
+          <h3 class="project-title"><strong>Twixt Game (C)</strong></h3>
+
+          <p>
+            I developed a prototype of the strategy board game Twixt to explore how complex rule-based games can be translated into a digital format. The project focuses on replicating the core mechanics of the game, where two players place pegs on a grid. The system automatically creates valid links between pegs and prevents illegal connections, such as those that would intersect.
+          </p>
+
+          <p>
+            I chose to work on this project because Twixt is not a simple game. It involves several non-trivial rules, including restrictions on peg placement and constraints on how connections can be formed. This made it an ideal project for improving my problem-solving skills and understanding of system design. It also helped me practice managing game state and converting abstract rules into structured code.
+          </p>
+
+          <p>
+            If I were to continue developing this project, I would focus on improving the code structure by separating the game logic from the user interface. I would also add features such as an AI opponent, move history tracking, and enhanced visuals.
+          </p>
+
+          <p>
+            During development, I prioritized correctness of the game rules over visual design. This approach allowed me to quickly create a working prototype, which can now be improved incrementally.
+          </p>
+        </article>
+      </li>
+
+      <!-- Project 3 -->
+      <li data-project="2">
+        <article class="text" id="project-2">
+          <h3 class="project-title"><strong>Smart Room Occupancy Counter (IoT)</strong></h3>
+
+          <p>
+            I developed an IoT-based system to monitor and count the number of people in a room by tracking entry and exit. The system uses an ultrasonic sensor to detect whether the door is open, ensuring that counting only happens when movement through the doorway is possible. This helps prevent incorrect readings when there is no actual passage.
+          </p>
+
+          <p>
+            An IR sensor is then used to detect the direction of movement, determining whether a person is entering or leaving the room. By combining both sensors, the system improves accuracy and reduces false counts, especially in situations where multiple movements occur near the entrance.
+          </p>
+
+          <p>
+            The data is displayed on a web interface built using HTML, allowing users to view the current occupancy in real time from a browser. The interface is designed to be simple and clear, ensuring that the information is easily accessible without unnecessary complexity.
+          </p>
+
+          <p>
+            This project involved integrating hardware components with software logic, handling real-time sensor input, and ensuring accurate counting despite continuous movement. It helped me understand IoT system design, sensor coordination, and how to connect physical devices with web-based visualization.
+          </p>
+
+          <p>
+            Additionally, the project strengthened my ability to think about edge cases, such as handling rapid consecutive entries or exits, and ensuring the system remains reliable under different real-world conditions.
+          </p>
+        </article>
+      </li>
+
+      <!-- Project 4 -->
+      <li data-project="3">
+        <article class="text" id="project-3">
+          <h3 class="project-title"><strong>IoT-Based Radar Detection System</strong></h3>
+
+          <p>
+            I developed an IoT-based radar system that uses a servo motor and an ultrasonic sensor to detect objects in its surroundings. The ultrasonic sensor is mounted on a servo motor, which rotates across a 180-degree range to scan the area, similar to how a radar works.
+          </p>
+
+          <p>
+            As the sensor moves, it continuously measures distances to nearby objects and identifies their positions within the scanning range. This allows the system to build a dynamic understanding of the environment in real time.
+          </p>
+
+          <p>
+            The detected data is sent to a mobile application built using Kodular Creator, where the objects are visually displayed. This provides a clear and interactive representation of the surroundings, making the system more intuitive and user-friendly.
+          </p>
+
+          <p>
+            This project combines hardware control with sensor data processing and mobile app integration, helping me understand how physical devices can be used to create interactive and dynamic monitoring systems.
+          </p>
+        </article>
+      </li>
+
+    </ul>
+  </section>
+
+</main>
+
+<script src="projects.js"></script>
+</body>
+</html>

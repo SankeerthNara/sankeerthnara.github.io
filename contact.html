@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sankeerth Nara</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <script src="theme-toggle.js"></script>
+
+  <header>
+    <h1>Sankeerth Nara</h1>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="now">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Social Links -->
+    <section class="socials">
+      <a href="https://github.com/SankeerthNara" target="_blank">
+        <img src="github.png" alt="GitHub">
+      </a>
+
+      <a href="https://www.linkedin.com/in/sankeerth-nara-412ab3373/" target="_blank">
+        <img src="linkedin.png" alt="LinkedIn">
+      </a>
+
+      <a href="https://www.instagram.com/sankeerth_nara/" target="_blank">
+        <img src="instagram.png" alt="Instagram">
+      </a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Write to me @</h2>
+
+      <ul class="contact-list">
+        <li>
+          <button type="button" id="personalEmailBtn">
+            Personal Email
+          </button>
+        </li>
+
+        <li>
+          <button type="button" id="collegeEmailBtn">
+            College Email
+          </button>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <dialog id="contactDialog">
+    <form id="contactForm">
+
+      <header>
+        <h3>Write a Mail to Me</h3>
+      </header>
+
+      <div class="form-body">
+        <label>
+          Name:
+          <input type="text" name="name" required>
+        </label>
+
+        <label>
+          Email:
+          <input type="email" name="email" required>
+        </label>
+
+        <label>
+          Message:
+          <textarea name="message" required></textarea>
+        </label>
+      </div>
+
+      <footer>
+        <button type="submit">Send</button>
+        <button type="button" id="closeBtn">Cancel</button>
+      </footer>
+
+    </form>
+  </dialog>
+
+  <script src="contact.js"></script>
+
+</body>
+</html>
